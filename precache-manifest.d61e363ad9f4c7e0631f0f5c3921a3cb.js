@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/Tienda/static/media/logouber.90a7784c.PNG"
   },
   {
-    "revision": "889e6000640c32e72a3e007ab43ae980",
+    "revision": "f231aa5dcec54fe67be62639559ae4de",
     "url": "/Tienda/index.html"
   }
 ];

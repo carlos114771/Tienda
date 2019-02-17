@@ -1,7 +1,7 @@
 {
   "name": "tienda",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://carlos114771.github.io/Tienda/",
   "dependencies": {
     "bootstrap": "^4.3.1",

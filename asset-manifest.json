@@ -1,14 +1,16 @@
 {
-  "main.css": "/Tienda/static/css/main.2fc70ec8.chunk.css",
-  "main.js": "/Tienda/static/js/main.0babe894.chunk.js",
-  "main.js.map": "/Tienda/static/js/main.0babe894.chunk.js.map",
+  "main.css": "/Tienda/static/css/main.a29aa5d7.chunk.css",
+  "main.js": "/Tienda/static/js/main.4412852b.chunk.js",
+  "main.js.map": "/Tienda/static/js/main.4412852b.chunk.js.map",
   "runtime~main.js": "/Tienda/static/js/runtime~main.a5d706b2.js",
   "runtime~main.js.map": "/Tienda/static/js/runtime~main.a5d706b2.js.map",
-  "static/js/2.ba1ca5ba.chunk.js": "/Tienda/static/js/2.ba1ca5ba.chunk.js",
-  "static/js/2.ba1ca5ba.chunk.js.map": "/Tienda/static/js/2.ba1ca5ba.chunk.js.map",
+  "static/css/2.87a5e834.chunk.css": "/Tienda/static/css/2.87a5e834.chunk.css",
+  "static/js/2.5956c5a5.chunk.js": "/Tienda/static/js/2.5956c5a5.chunk.js",
+  "static/js/2.5956c5a5.chunk.js.map": "/Tienda/static/js/2.5956c5a5.chunk.js.map",
   "index.html": "/Tienda/index.html",
-  "precache-manifest.201513b0d70cd712d4be50fd26c8e0d0.js": "/Tienda/precache-manifest.201513b0d70cd712d4be50fd26c8e0d0.js",
+  "precache-manifest.8d6e05e6101fc03000fe0f36307a9e57.js": "/Tienda/precache-manifest.8d6e05e6101fc03000fe0f36307a9e57.js",
   "service-worker.js": "/Tienda/service-worker.js",
-  "static/css/main.2fc70ec8.chunk.css.map": "/Tienda/static/css/main.2fc70ec8.chunk.css.map",
-  "static/media/logo.svg": "/Tienda/static/media/logo.5d5d9eef.svg"
+  "static/css/2.87a5e834.chunk.css.map": "/Tienda/static/css/2.87a5e834.chunk.css.map",
+  "static/css/main.a29aa5d7.chunk.css.map": "/Tienda/static/css/main.a29aa5d7.chunk.css.map",
+  "static/media/logouber.PNG": "/Tienda/static/media/logouber.90a7784c.PNG"
 }

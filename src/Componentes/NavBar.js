@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logoreloj2.PNG";
 import SignIn from "./SignIn.js";
+import Login from "./Login.js";
 import {
   Collapse,
   Navbar,
@@ -47,7 +48,7 @@ export default class NavigationBar extends React.Component {
                 <Link to={"/Cart.js/"}>Cart &nbsp;</Link>
               </NavItem>
               <NavItem>
-                <Link to={"/Cart.js/"}>LogIn &nbsp;</Link>
+                <Link to={"/Login.js/"}>LogIn &nbsp;</Link>
               </NavItem>
               <NavItem>
                 <Link to={"/Cart.js/"}>About</Link>

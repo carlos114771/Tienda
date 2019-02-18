@@ -49,7 +49,7 @@ const Example = props => {
                 <CardText>
                   With precision accuracy and an array of special features
                 </CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -62,7 +62,7 @@ const Example = props => {
                 <CardText>
                   Timeless appeal and clean design
                 </CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -85,7 +85,7 @@ const Example = props => {
                 <CardText>
                   Titan blue dial chronograph watch for men
                 </CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -103,7 +103,7 @@ const Example = props => {
                 <CardText>
                 Silver Hands And Markers / Black Second Hand
                 </CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -121,7 +121,7 @@ const Example = props => {
                 <CardText>
                 Stainless steel case with a stainless steel bracelet wrapped in black silicone.
                 </CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -146,7 +146,7 @@ const Example = props => {
                 negro mate de acero inoxidable y la corona que es acentuado con índices de 
                 oro rosa y las manos moldeados personalizado.
                 </CardText>
-                <Button>Button</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -164,7 +164,7 @@ const Example = props => {
                 <CardText>
                 Simple pero versátil, este reloj analógico
                 </CardText>
-                <Button>Button</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -182,7 +182,7 @@ const Example = props => {
                 <CardText>
                 Men's 2 Zone Bracelet Watch, 45mm
                 </CardText>
-                <Button>Button</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>

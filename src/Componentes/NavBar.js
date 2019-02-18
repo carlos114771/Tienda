@@ -1,6 +1,6 @@
-import React from 'react';
-import logo from './logoreloj2.PNG';
-import SignIn from './SignIn.js';
+import React from "react";
+import logo from "./logoreloj2.PNG";
+import SignIn from "./SignIn.js";
 import {
   Collapse,
   Navbar,
@@ -12,8 +12,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
-  import {Link} from 'react-router-dom';
+  DropdownItem
+} from "reactstrap";
+import { Link } from "react-router-dom";
 
 export default class NavigationBar extends React.Component {
   constructor(props) {
@@ -32,8 +33,10 @@ export default class NavigationBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="white" light expand="md">
-          <NavbarBrand href="/"><img src={logo} height="130" alt="logo"/> </NavbarBrand>
+        <Navbar style={{fontFamily:'fantasy',fontSize:'30px'}} color="white" light expand="md">
+          <NavbarBrand href="/">
+            <img src={logo} height="130" alt="logo" />{" "}
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -41,9 +44,14 @@ export default class NavigationBar extends React.Component {
                 <Link to={"/SignIn.js/"}>SignIn &nbsp;</Link>
               </NavItem>
               <NavItem>
-              <Link to={"/Cart.js/"}>Cart</Link>
+                <Link to={"/Cart.js/"}>Cart &nbsp;</Link>
               </NavItem>
-             
+              <NavItem>
+                <Link to={"/Cart.js/"}>LogIn &nbsp;</Link>
+              </NavItem>
+              <NavItem>
+                <Link to={"/Cart.js/"}>About</Link>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

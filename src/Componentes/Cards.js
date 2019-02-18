@@ -24,6 +24,7 @@ import card7 from "./card7.jpg";
 import card8 from "./card8.jpg";
 import card9 from "./card9.jpg";
 const Example = props => {
+ 
   return (
     <div>
       <Container>
@@ -35,7 +36,7 @@ const Example = props => {
                 <CardTitle>Fossil</CardTitle>
                 <CardSubtitle>$ 299.99</CardSubtitle>
                 <CardText>Men Analogue Watch</CardText>
-                <Button>Agregar</Button>
+                <Button onClick={Compra}>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -191,4 +192,9 @@ const Example = props => {
   );
 };
 
+function Compra(){
+  alert("Se agrego al Carrito");
+}
+
 export default Example;
+

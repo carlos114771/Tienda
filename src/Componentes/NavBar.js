@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logouber.PNG';
+import logo from './logoreloj2.PNG';
 import SignIn from './SignIn.js';
 import {
   Collapse,
@@ -32,7 +32,7 @@ export default class NavigationBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="white" light expand="md">
           <NavbarBrand href="/"><img src={logo} height="130" alt="logo"/> </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

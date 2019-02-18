@@ -8,11 +8,12 @@ import {
   Input,
   FormText
 } from "reactstrap";
-
+import NavBar from './NavBar.js';
 export default class SignInForm extends React.Component {
   render() {
     return (
       <div>
+        <NavBar></NavBar>
             <br></br><br></br>
         <div style ={{border: 'thin', display: 'flex', justifyContent: 'center'}}>
           <Form>

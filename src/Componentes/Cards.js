@@ -16,8 +16,13 @@ import "./Cards.css";
 
 import card1 from "./card1.jpg";
 import card2 from "./card2.jpg";
-import card3 from "./card3.webp";
-
+import card3 from "./card3.jpg";
+import card4 from "./card4.jpg";
+import card5 from "./card5.jpg";
+import card6 from "./card6.jpg";
+import card7 from "./card7.jpg";
+import card8 from "./card8.jpg";
+import card9 from "./card9.jpg";
 const Example = props => {
   return (
     <div>
@@ -29,10 +34,8 @@ const Example = props => {
               <CardBody>
                 <CardTitle>Fossil</CardTitle>
                 <CardSubtitle>$ 299.99</CardSubtitle>
-                <CardText>
-                 Men Analogue Watch
-                </CardText>
-                <Button>Button</Button>
+                <CardText>Men Analogue Watch</CardText>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -40,34 +43,25 @@ const Example = props => {
             <Card>
               <CardImg top width="100%" src={card2} alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>G-Shock Black And Gold Watch</CardTitle>
+                <CardSubtitle>$ 150.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  With precision accuracy and an array of special features
                 </CardText>
-                <Button>Button</Button>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
           <Col sm="4">
             <Card>
-              <CardImg
-                top
-                width=""
-                src={card3}
-                alt="Card image cap"
-              />
+              <CardImg top width="" src={card3} alt="Card image cap" />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>AU1040-08E Eco Drive Watch</CardTitle>
+                <CardSubtitle>$ 131.25</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Timeless appeal and clean design
                 </CardText>
-                <Button>Button</Button>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -81,18 +75,16 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                src={card4}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>TITAN Blue Dial Chronograph Watch For Men - 9234WL02</CardTitle>
+                <CardSubtitle>$ 1,200.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  Titan blue dial chronograph watch for men
                 </CardText>
-                <Button>Button</Button>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -101,18 +93,16 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                src={card5}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>Astro Blue</CardTitle>
+                <CardSubtitle>$ 195.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Silver Hands And Markers / Black Second Hand
                 </CardText>
-                <Button>Button</Button>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -120,19 +110,17 @@ const Example = props => {
             <Card>
               <CardImg
                 top
-                width=""
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                width="100%"
+                src={card6}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>Chronograph Men's Watch 5905</CardTitle>
+                <CardSubtitle>$ 199.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Stainless steel case with a stainless steel bracelet wrapped in black silicone.
                 </CardText>
-                <Button>Button</Button>
+                <Button>Agregar</Button>
               </CardBody>
             </Card>
           </Col>
@@ -146,16 +134,16 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                src={card7}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>Nixon Time Teller reloj todo negro y oro rosa</CardTitle>
+                <CardSubtitle>$ 100.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Simple pero versátil, este reloj analógico de tamaño medio se hace con una banda de color 
+                negro mate de acero inoxidable y la corona que es acentuado con índices de 
+                oro rosa y las manos moldeados personalizado.
                 </CardText>
                 <Button>Button</Button>
               </CardBody>
@@ -166,16 +154,14 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                src={card8}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>Movado ‘Large Bold’ Bracelet Watch 42mm</CardTitle>
+                <CardSubtitle>$ 595.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Simple pero versátil, este reloj analógico
                 </CardText>
                 <Button>Button</Button>
               </CardBody>
@@ -186,16 +172,14 @@ const Example = props => {
               <CardImg
                 top
                 width=""
-                src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+                src={card9}
                 alt="Card image cap"
               />
               <CardBody>
-                <CardTitle>Card title</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardTitle>Vince Camuto</CardTitle>
+                <CardSubtitle>$ 195.00</CardSubtitle>
                 <CardText>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Men's 2 Zone Bracelet Watch, 45mm
                 </CardText>
                 <Button>Button</Button>
               </CardBody>

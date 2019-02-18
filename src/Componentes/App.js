@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import Navbar from "./NavBar.js";
 import Home from "./Home";
+import './App.css';
 import SignIn from "./SignIn";
 import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
 import PropTypes from "prop-types";

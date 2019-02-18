@@ -59,9 +59,9 @@ export default class NavigationBar extends React.Component {
               <NavItem>
                 <Link to={"/Cart.js/"}>About &nbsp;</Link>
               </NavItem>
-              <NavItem>
+              {/*<NavItem>
                 <Search/>
-              </NavItem>
+              </NavItem>*/}
               >
             </Nav>
           </Collapse>

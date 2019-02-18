@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Routes from './Componentes/Routes.js';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { HashRouter } from 'react-router-dom';
-
+//import registerServiceWorker from './registerServiceWorker'
 ReactDOM.render(
     <HashRouter>
         <Routes />
@@ -17,4 +17,6 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.register();
+
+//registerServiceWorker();

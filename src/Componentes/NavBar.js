@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logoreloj2.PNG";
 import SignIn from "./SignIn.js";
 import Login from "./Login.js";
+import Search from "./Searchbar.js";
 import {
   Collapse,
   Navbar,
@@ -34,7 +35,12 @@ export default class NavigationBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar style={{fontFamily:'fantasy',fontSize:'30px'}} color="white" light expand="md">
+        <Navbar
+          style={{ fontFamily: "fantasy", fontSize: "30px" }}
+          color="white"
+          light
+          expand="md"
+        >
           <NavbarBrand href="/">
             <img src={logo} height="130" alt="logo" />{" "}
           </NavbarBrand>
@@ -51,8 +57,12 @@ export default class NavigationBar extends React.Component {
                 <Link to={"/Login.js/"}>LogIn &nbsp;</Link>
               </NavItem>
               <NavItem>
-                <Link to={"/Cart.js/"}>About</Link>
+                <Link to={"/Cart.js/"}>About &nbsp;</Link>
               </NavItem>
+              <NavItem>
+                <Search/>
+              </NavItem>
+              >
             </Nav>
           </Collapse>
         </Navbar>

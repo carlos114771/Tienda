@@ -8,12 +8,12 @@ export default class Example extends React.Component {
        
       
         <FormGroup>
-          <Label for="exampleSearch">Search</Label>
+          <Label for="exampleSearch"></Label>
           <Input
             type="search"
             name="search"
             id="exampleSearch"
-            placeholder="search placeholder"
+            placeholder="search"
           />
         </FormGroup>
        

@@ -23,10 +23,12 @@ import card6 from "./card6.jpg";
 import card7 from "./card7.jpg";
 import card8 from "./card8.jpg";
 import card9 from "./card9.jpg";
+import NavBar from './NavBar.js';
 const Example = props => {
  
   return (
     <div>
+      <NavBar></NavBar>
       <Container>
         <Row>
           <Col sm="4">

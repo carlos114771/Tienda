@@ -1,16 +1,20 @@
 {
   "name": "tienda",
   "version": "0.1.0",
+  "homepage": "http://carlos114771.github.io/Tienda",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "firebase": "^5.9.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^6.0.0",
+    "react-firebase": "^2.2.8",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
     "react-search-field": "^1.0.0",
-    "reactstrap": "^7.1.0"
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

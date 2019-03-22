@@ -10,6 +10,7 @@ import {
 } from "reactstrap";
 import NavBar from './NavBar.js';
 import fire from '../config/Fire';
+import Footer from './Footer';
 export default class SignInForm extends React.Component {
   constructor(props){
     super(props);
@@ -125,6 +126,7 @@ export default class SignInForm extends React.Component {
             </FormGroup>
           </Form>
         </div>
+        <Footer/>
       </div>
     );
   }

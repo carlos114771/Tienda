@@ -3,6 +3,7 @@ import Cards from "./Cards.js";
 import { Row, Col, Container } from "reactstrap";
 import { connect } from "react-redux";
 import NavBar from "./NavBar";
+import Footer from './Footer';
 import card1 from "./card1.jpg";
 import card2 from "./card2.jpg";
 import card3 from "./card3.jpg";
@@ -86,10 +87,15 @@ class Productos extends Component {
       );
     });
     return (
-      <Container fluid>
-        <NavBar />
-        <Row>{cards}</Row>
-      </Container>
+      <div>
+		  <NavBar/>
+        <div>
+          <Container fluid>
+            <Row>{cards}</Row>
+          </Container>
+        </div>
+		<Footer/>
+      </div>
     );
   }
 }

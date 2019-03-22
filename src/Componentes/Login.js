@@ -10,17 +10,43 @@ import {
 } from "reactstrap";
 import fire from '../config/Fire';
 import NavBar from './NavBar.js';
+import firebase from 'firebase';
 import Footer from './Footer';
 export default class SignInForm extends React.Component {
   constructor(props){
     super(props);
     this.login =this.login.bind(this);
     this.handleChange=this.handleChange.bind(this);
+    this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
+    this.signOutUser = this.signOutUser.bind(this);
+
     this.state={
       email:"",
       password: ""
     };
   }
+
+  signOutUser = async () => {
+    try {
+      await fire.auth().signOut();
+      console.log("Logged Out");
+    } catch (e) {
+      console.log(e);
+    }
+  }
+  handleGoogleLogin() {
+    let provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope("profile");
+    provider.addScope("email");
+    fire
+      .auth()
+      .signInWithPopup(provider)
+      .then(result => {
+        console.log(result);
+      });
+  }
+
+
   login(e){
     e.preventDefault();
     fire
@@ -78,12 +104,15 @@ export default class SignInForm extends React.Component {
           
             <FormGroup check row>
               <Col sm={{ size: 10, offset: 0 }}>
-                <Button type="submit" onClick={this.login}>Confirmar</Button>
+                <Button type="submit" onClick={this.login} >Confirmar</Button>
+                {'             '}
+                <Button type="submit" onClick={this.handleGoogleLogin}  color="danger">Entrar con Google</Button>
+
               </Col>
             </FormGroup>
           </Form>
         </div>
-        <Footer/>
+        <Footer><button onClick={this.signOutUser}>Log out</button></Footer>
       </div>
     );
   }

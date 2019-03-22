@@ -8,13 +8,17 @@ import {
   Input,
   FormText
 } from "reactstrap";
-import NavBar from './NavBar.js';
-import fire from '../config/Fire';
-import Footer from './Footer';
+import NavBar from "./NavBar.js";
+import fire from "../config/Fire";
+import firebase from "firebase";
+import Footer from "./Footer";
+
+const firebaseAuthKey = "firebaseAuthInProgress";
+
 export default class SignInForm extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
+    this.state = {
       nombre: "",
       apellido: "",
       username: "",
@@ -22,20 +26,46 @@ export default class SignInForm extends React.Component {
       password: ""
     };
     this.handleChange = this.handleChange.bind(this);
-    this.createUser=this.createUser.bind(this);
+    this.createUser = this.createUser.bind(this);
+    this.handleGoogleLogin = this.handleGoogleLogin.bind(this);
   }
 
-  createUser(){
+  handleGoogleLogin() {
+    let provider = new firebase.auth.GoogleAuthProvider();
+    provider.addScope("profile");
+    provider.addScope("email");
+    fire
+      .auth()
+      .signInWithPopup(provider)
+      .then(result => {
+        console.log(result);
+      });
+  }
+
+  login(e) {
+    e.preventDefault();
+    fire
+      .auth()
+      .signInWithEmailAndPassword(this.state.email, this.state.password)
+      .then(u => {
+        console.log("success");
+      })
+      .catch(error => {
+        console.log("nada");
+      });
+  }
+
+  createUser() {
     fire
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then(u=>{
+      .then(u => {
         console.log("usuario creado");
       })
-      .catch(function(error){
+      .catch(function(error) {
         var errorCode = error.Code;
         var errorMessage = error.Message;
-        if (errorCode=="auth/weak-password") {
+        if (errorCode == "auth/weak-password") {
           alert("The password is weak.");
         } else {
           alert(errorMessage);
@@ -44,19 +74,20 @@ export default class SignInForm extends React.Component {
       });
   }
 
-  handleChange(e){
-    this.setState({[e.target.name]:e.target.value});
+  handleChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
     console.log(e.target.value);
   }
-
-
 
   render() {
     return (
       <div>
-        <NavBar></NavBar>
-            <br></br><br></br>
-        <div style ={{border: 'thin', display: 'flex', justifyContent: 'center'}}>
+        <NavBar />
+        <br />
+        <br />
+        <div
+          style={{ border: "thin", display: "flex", justifyContent: "center" }}
+        >
           <Form>
             <FormGroup row>
               <Label for="Nombre" sm={4}>
@@ -118,15 +149,18 @@ export default class SignInForm extends React.Component {
                 />
               </Col>
             </FormGroup>
-    
+
             <FormGroup check row>
               <Col sm={{ size: 10, offset: 0 }}>
-                <Button type="submit" onClick={this.createUser}>Confirmar</Button>
+                <Button type="submit" onClick={this.createUser}>
+                  Confirmar
+                </Button>
+
               </Col>
             </FormGroup>
           </Form>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }

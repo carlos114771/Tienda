@@ -33,7 +33,7 @@ const Example = props => {
  
   return (
     <div>
-      <NavBar></NavBar>
+      <NavBar/>
       
       
       <Container>

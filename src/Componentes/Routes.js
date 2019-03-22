@@ -6,7 +6,7 @@ import SignIn from './SignIn.js';
 import Cart from './Cart.js';
 import Login from './Login.js';
 import Cards from './Cards.js';
-import Productos from './Productos.js';
+import Productos from './Productos';
 import { HashRouter } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Routes = () =>
         <Switch>
             <Route exact path={"/Home.js"} component={Home} />
             <Route exact path={"/SignIn.js"} component={SignIn} />
-            <Route exact path={"/productos.js"} component={Productos} />
+            <Route exact path={"/Productos.js"} component={Productos} />
             <Route exact path={"/Login.js"} component={Login} />
             <Route exact path={"/"} component={Home} />
         </Switch>
